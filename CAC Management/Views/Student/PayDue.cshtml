@@ -1,0 +1,50 @@
+﻿@model CAC_Management.Models.Student
+@{
+    ViewData["Title"] = "Update Student Information";
+    Layout = "_LayoutForAdmin";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CAC_Management</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="background-color: #309369;align-content: center;">
+    <div class="container" style="width: 40%;">
+        <form method="post">
+            <div asp-validation-summary="All"></div>
+            <h2 style="text-align: center;">Pay Due Fees</h2>
+            <hr />
+            <input type="hidden" asp-for="StudentId" class="form-control" readonly />
+            <input type="hidden" asp-for="StudentName" class="form-control" />
+            <input type="hidden" asp-for="FatherName" class="form-control" />
+            <input type="hidden" asp-for="MotherName" class="form-control" />
+            <input type="hidden" asp-for="DOB" class="form-control" />
+            <input type="hidden" asp-for="Gender" class="form-control" />
+            <input type="hidden" asp-for="Address" class="form-control" />
+            <input type="hidden" asp-for="Contact" class="form-control" />
+            <input type="hidden" asp-for="Email" class="form-control" />
+            <input type="hidden" asp-for="Password" class="form-control" />
+            <div class="form-group">
+                <label asp-for="TuitionFee"></label>
+                <input asp-for="TuitionFee" class="form-control" />
+                <span asp-validation-for="TuitionFee"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DueAmount"></label>
+                <input asp-for="DueAmount" class="form-control" />
+                <span asp-validation-for="DueAmount"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PayAmount"></label>
+                <input asp-for="PayAmount" class="form-control" />
+                <span asp-validation-for="PayAmount"></span>
+            </div>
+
+            <input type="submit" class="btn-primary" value="Submit" />
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+﻿
+@model CAC_Management.Models.Teacher
+@{
+    ViewData["Title"] = "TeacherAdmission";
+    Layout = "~/Views/Shared/_LayoutForAdmin.cshtml";
+}
+
+<body style="background-color: #309369;align-content: center;">
+    <div class="container" style="width: 40%;">
+        <form method="post">
+            <div asp-validation-summary="All"></div>
+            <div class="text-success"><center><h3>@ViewBag.Success</h3></center></div>
+            <h2 style="text-align: center;"><strong>Add New Teacher </strong></h2>
+            <hr />
+
+            <div class="form-group">
+                <label asp-for="TeacherName"></label>
+                <input asp-for="TeacherName" class="form-control" />
+                <span asp-validation-for="TeacherName"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contact"></label>
+                <input asp-for="Contact" class="form-control" />
+                <span asp-validation-for="Contact"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Salary"></label>
+                <input asp-for="Salary" class="form-control" />
+                <span asp-validation-for="Salary"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PaidAmount"></label>
+                <input asp-for="PaidAmount" class="form-control" />
+                <span asp-validation-for="PaidAmount"></span>
+            </div>
+           
+
+            <input type="submit" class="btn-primary" value="Add Teacher" />
+        </form>
+    </div>
+</body>
+
+

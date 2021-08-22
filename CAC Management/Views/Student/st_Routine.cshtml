@@ -1,0 +1,49 @@
+﻿@model IEnumerable<CAC_Management.Models.st_routine>
+@{
+    ViewData["Title"] = "RoutineIndex";
+    Layout = "_LayoutForStudent";
+}
+<body style="background-color: #309369;align-content: center;">
+
+    <div style="margin:15px;">
+        <center> <h2> Student Routine List</h2> </center>
+        <br />
+
+        <table class="table table-bordered">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(m => m.FirstOrDefault().day)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.FirstOrDefault().sub)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.FirstOrDefault().time)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.FirstOrDefault().instructor)
+                </th>
+              
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(p => item.day)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(p => item.sub)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(p => item.time)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(p => item.instructor)
+                    </td>
+                </tr>
+            }
+
+        </table>
+
+    </div>
+   </body>

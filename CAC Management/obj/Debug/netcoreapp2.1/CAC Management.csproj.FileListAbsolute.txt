@@ -1,0 +1,32 @@
+F:\SAD\CAC Management\CAC Management\bin\Debug\netcoreapp2.1\CAC Management.deps.json
+F:\SAD\CAC Management\CAC Management\bin\Debug\netcoreapp2.1\CAC Management.runtimeconfig.json
+F:\SAD\CAC Management\CAC Management\bin\Debug\netcoreapp2.1\CAC Management.runtimeconfig.dev.json
+F:\SAD\CAC Management\CAC Management\bin\Debug\netcoreapp2.1\CAC Management.dll
+F:\SAD\CAC Management\CAC Management\obj\Debug\netcoreapp2.1\CAC Management.csprojAssemblyReference.cache
+F:\SAD\CAC Management\CAC Management\obj\Debug\netcoreapp2.1\CAC Management.csproj.CoreCompileInputs.cache
+F:\SAD\CAC Management\CAC Management\obj\Debug\netcoreapp2.1\CAC Management.RazorAssemblyInfo.cache
+F:\SAD\CAC Management\CAC Management\obj\Debug\netcoreapp2.1\CAC Management.RazorAssemblyInfo.cs
+F:\SAD\CAC Management\CAC Management\obj\Debug\netcoreapp2.1\CAC Management.AssemblyInfoInputs.cache
+F:\SAD\CAC Management\CAC Management\obj\Debug\netcoreapp2.1\CAC Management.AssemblyInfo.cs
+F:\SAD\CAC Management\CAC Management\obj\Debug\netcoreapp2.1\CAC Management.TagHelpers.input.cache
+F:\SAD\CAC Management\CAC Management\obj\Debug\netcoreapp2.1\CAC Management.TagHelpers.output.cache
+F:\SAD\CAC Management\CAC Management\obj\Debug\netcoreapp2.1\CAC Management.RazorCoreGenerate.cache
+F:\SAD\CAC Management\CAC Management\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+F:\SAD\CAC Management\CAC Management\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+F:\SAD\CAC Management\CAC Management\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+F:\SAD\CAC Management\CAC Management\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+F:\SAD\CAC Management\CAC Management\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+F:\SAD\CAC Management\CAC Management\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+F:\SAD\CAC Management\CAC Management\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+F:\SAD\CAC Management\CAC Management\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+F:\SAD\CAC Management\CAC Management\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+F:\SAD\CAC Management\CAC Management\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+F:\SAD\CAC Management\CAC Management\obj\Debug\netcoreapp2.1\CAC Management.RazorTargetAssemblyInfo.cache
+F:\SAD\CAC Management\CAC Management\obj\Debug\netcoreapp2.1\CAC Management.RazorTargetAssemblyInfo.cs
+F:\SAD\CAC Management\CAC Management\bin\Debug\netcoreapp2.1\CAC Management.pdb
+F:\SAD\CAC Management\CAC Management\bin\Debug\netcoreapp2.1\CAC Management.Views.dll
+F:\SAD\CAC Management\CAC Management\bin\Debug\netcoreapp2.1\CAC Management.Views.pdb
+F:\SAD\CAC Management\CAC Management\obj\Debug\netcoreapp2.1\CAC Management.Views.pdb
+F:\SAD\CAC Management\CAC Management\obj\Debug\netcoreapp2.1\CAC Management.dll
+F:\SAD\CAC Management\CAC Management\obj\Debug\netcoreapp2.1\CAC Management.pdb
+F:\SAD\CAC Management\CAC Management\obj\Debug\netcoreapp2.1\CAC Management.csproj.CopyComplete

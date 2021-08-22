@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAC_Management", "CAC Management\CAC_Management.csproj", "{485289A8-A93E-4508-B489-D95F9601C8DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{485289A8-A93E-4508-B489-D95F9601C8DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{485289A8-A93E-4508-B489-D95F9601C8DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{485289A8-A93E-4508-B489-D95F9601C8DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{485289A8-A93E-4508-B489-D95F9601C8DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9AF72106-B2A0-48C6-8506-86BB83623587}
+	EndGlobalSection
+EndGlobal

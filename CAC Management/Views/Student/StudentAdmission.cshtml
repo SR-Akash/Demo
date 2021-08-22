@@ -1,0 +1,87 @@
+﻿@model CAC_Management.Models.Student
+@{
+    ViewData["Title"] = "Add Student Information";
+    Layout = "_LayoutForAdmin";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CAC_Management</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="background-color: #309369;align-content: center;">
+
+    <div class="container" style="width: 40%;">
+        <form asp-controller="Student" asp-action="StudentAdmission" method="post">
+            <div asp-validation-summary="All"></div>
+            <div class="text-success"><center><h3>@ViewBag.Success</h3></center></div>
+            <h2 style="text-align: center;"> <strong> Add New Student </strong></h2>
+            <hr />
+
+            <div class="form-group">
+                <label asp-for="StudentName"></label>
+                <input asp-for="StudentName" class="form-control" />
+                <span asp-validation-for="StudentName"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FatherName"></label>
+                <input asp-for="FatherName" class="form-control" />
+                <span asp-validation-for="FatherName"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MotherName"></label>
+                <input asp-for="MotherName" class="form-control" />
+                <span asp-validation-for="MotherName"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DOB"></label>
+                <input asp-for="DOB" class="form-control" />
+                <span asp-validation-for="DOB"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Gender"></label>
+                <select asp-for="Gender">
+                    <option value="">---Select---</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <span asp-validation-for="Gender"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contact"></label>
+                <input asp-for="Contact" class="form-control" />
+                <span asp-validation-for="Contact"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TuitionFee"></label>
+                <input asp-for="TuitionFee" class="form-control" />
+                <span asp-validation-for="TuitionFee"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PayAmount"></label>
+                <input asp-for="PayAmount" class="form-control" />
+                <span asp-validation-for="PayAmount"></span>
+            </div>
+
+            <input type="submit" class="btn-primary" value="Add Student" />
+        </form>
+    </div>
+</body>
+</html>

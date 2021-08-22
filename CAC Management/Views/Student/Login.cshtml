@@ -1,0 +1,39 @@
+﻿@model CAC_Management.Models.Student
+@{
+    ViewData["Title"] = "Login Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @*<title>Login</title>*@
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="background-color: #309369;align-content: center;">
+
+    @*<h2 class="lead" style="text-align:center;font-size: 20px">Login Form</h2>*@
+    <hr />
+    <div class="container" style="width: 40%;">
+
+        <form class="validate-form" asp-area="" asp-controller="Student" asp-action="Login" method="post" role="form">
+            <div class="text-danger"><center><h3>@ViewBag.Login</h3></center></div>
+            <h2 style="text-align: center;">Student Login</h2>
+
+            <div class="validate-input">
+                <label for="usr">Enter User Name</label><br />
+                <input class="form-control" type="text" name="StudentName" placeholder="Enter Student Name" required>
+            </div>
+            <br />
+            <div class="validate-input" data-validate="Password is required">
+                <label for="pwd">Enter Password</label><br />
+                <input class="form-control" type="password" name="Password" placeholder="Enter Password" required>
+            </div>
+            <br />
+            <div class="form-btn">
+                <input class="btn-info" type="submit" value="Login" style="text-align: center;" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

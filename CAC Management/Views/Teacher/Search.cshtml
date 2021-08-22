@@ -1,0 +1,46 @@
+﻿@model CAC_Management.Models.Teacher
+
+@{
+    ViewData["Title"] = "Teacher Details";
+    Layout = "_LayoutForAdmin";
+}
+<hr>
+<body style="background-color: #309369;align-content: center;">
+
+    <h1 style="text-align:center">Teacher Details</h1>
+    <div class="container">
+        <table border="1" class="table table-bordered">
+            <thead>
+                <tr>
+                    <td style="text-align:center; font-weight: bold;">Teacher Id</td>
+                    <td style="text-align:center; font-weight: bold;">Teacher Name</td>
+                    <td style="text-align:center; font-weight: bold;">Contact</td>
+                    <td style="text-align:center; font-weight: bold;">Address</td>
+                    <td style="text-align:center; font-weight: bold;">Email</td>
+                    <td style="text-align:center; font-weight: bold;">Password</td>
+                    <td style="text-align:center; font-weight: bold;">Salary</td>
+                    <td style="text-align:center; font-weight: bold;">Paid Amount</td>
+                    <td style="text-align:center; font-weight: bold;">Payment Status</td>
+                </tr>
+            </thead>
+            <tr>
+                <td style="text-align:center">@Model.TeacherId</td>
+                <td style="text-align:center">@Model.TeacherName</td>
+                <td style="text-align:center">@Model.Contact</td>
+                <td style="text-align:center">@Model.Address</td>
+                <td style="text-align:center">@Model.Email</td>
+                <td style="text-align:center">@Model.Password</td>
+                <td style="text-align:center">@Model.Salary</td>
+                <td style="text-align:center">@Model.PaidAmount</td>
+                @if (Model.Payment_Status == 0)
+                {
+                    <td style="text-align:center">Paid</td>
+                }
+                else
+                {
+                    <td style="text-align:center">Due</td>
+                }
+            </tr>
+        </table>
+    </div>
+</body>

@@ -1,0 +1,66 @@
+﻿@model List<CAC_Management.Models.Student>
+@{
+    ViewData["Title"] = "Update Student Information";
+    Layout = "_LayoutForAdmin";
+}
+
+
+
+<h1 style="text-align:center"> <strong>Student List </strong></h1>
+
+
+<body style="background-color: #309369;align-content: center;">
+    @using (Html.BeginForm("StudentList", "StudentController", FormMethod.Post))
+    {
+        <form style="padding:30px;" method="post">
+            <table class="table table-bordered">
+                <tr>
+
+                    <th>Student Id</th>
+                    <th>Student Name</th>
+                    <th>Gender</th>
+                    <th>Address</th>
+                    <th>Contact</th>
+                    <th style="text-align:center;">Email</th>
+                    <th>Tution Fee</th>
+                    <th>Due Amount</th>
+                    <th>Payment Status</th>
+
+
+                </tr>
+
+                @foreach (var ac in Model)
+                {
+                    <tr>
+                        <td style="text-align:center">@ac.StudentId</td>
+                        <td style="text-align:center">@ac.StudentName</td>
+                        <td style="text-align:center">@ac.Gender</td>
+                        <td style="text-align:center">@ac.Address</td>
+                        <td style="text-align:center">@ac.Contact</td>
+                        <td style="text-align:center">@ac.Email</td>
+                        <td style="text-align:center">@ac.TuitionFee</td>
+                        <td style="text-align:center">@ac.DueAmount</td>
+                        @if (ac.PaymentStatus == 0)
+                        {
+                            <td style="text-align:center">Paid</td>
+                        }
+                        else
+                        {
+                            <td style="text-align:center ">Due</td>
+                        }
+
+                        <td style="text-align:center">
+                            <a asp-action="EditStudent" asp-route-id="@ac.StudentId" class="btn btn-primary">Transction</a>
+                            <a asp-action="PayDue" asp-route-id="@ac.StudentId" class="btn btn-primary">PayDue</a>
+
+                        </td>
+                        <td><a asp-action="DeleteStudent" asp-route-id="@ac.StudentId" class="btn btn-primary">Delete</a></td>
+                    </tr>
+                }
+            </table>
+        </form>
+    }
+
+
+
+</body>

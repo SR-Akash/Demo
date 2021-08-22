@@ -1,0 +1,50 @@
+﻿@model List<CAC_Management.Models.Teacher>;
+
+@{
+    Layout = "_LayoutForTeacher";
+
+}
+
+<h1 style="text-align:center">Teachers Payment</h1>
+<body style="background-color: #309369;align-content: center;">
+    @*<div class="container" style="width: 20%;">
+        <div class="form-group">
+            <div class="input-group-addon">
+                <form asp-controller="Teacher" asp-action="Search">
+                    <input placeholder="Search By Id" class="form-control" name="id" />
+                    <a asp-controller="Teacher" asp-action="Search" asp-route-id="id"><input type="submit" value="Search" /></a>
+                </form>
+            </div>
+        </div>
+    </div>*@
+
+    <div class="container">
+        <table border="1" class="table table-bordered" cellpadding="1" cellspacing="1">
+            <thead>
+                <tr>
+                    <th style="text-align:center; font-weight: bold;">Teacher Name</th>
+                    <th style="text-align:center; font-weight: bold;">Salary</th>
+                    <th style="text-align:center; font-weight: bold;">Paid Amount</th>
+                    <th style="text-align:center; font-weight: bold;">Payment Status</th>
+                </tr>
+
+                @foreach (var f in Model)
+                {
+                    <tr>
+                        <td style="text-align:center">@f.TeacherName</td>
+                        <td style="text-align:center">@f.Salary</td>
+                        <td style="text-align:center">@f.PaidAmount</td>
+                        @if (f.Payment_Status == 0)
+                        {
+                            <td style="text-align:center">Paid</td>
+                        }
+                        else
+                        {
+                            <td style="text-align:center">Due</td>
+                        }
+                    </tr>
+                }
+            </thead>
+        </table>
+    </div>
+</body>

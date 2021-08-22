@@ -1,0 +1,74 @@
+﻿@model IEnumerable<CAC_Management.Models.st_routine>
+@{
+    Layout = "_LayoutForAdmin";
+    ViewData["Title"] = "RoutineIndex";
+
+}
+<body style="background-color: #309369;align-content: center;">
+    <div style="margin:15px;">
+         <h2><center> <strong>Student Routine List </strong></center></h2>
+        <br />
+        <a asp-action="Routine" class="btn btn-primary">Create Routine</a>
+
+        <table class="table table-bordered">
+            <tr>
+                <th>
+                    <center>
+                        @Html.DisplayNameFor(m => m.FirstOrDefault().day)
+                    </center>     
+                </th>
+                <th>
+                    <center>
+                        @Html.DisplayNameFor(m => m.FirstOrDefault().sub)
+                    </center>                 
+                </th>
+                <th>
+                    <center>
+                        @Html.DisplayNameFor(m => m.FirstOrDefault().time)
+                    </center>                
+                </th>
+                <th>
+                    <center> 
+                        <strong>
+                            @Html.DisplayNameFor(m => m.FirstOrDefault().instructor)
+                        </strong>
+                    </center>               
+                </th>
+
+           
+          
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <center>
+                            @Html.DisplayFor(p => item.day)
+                        </center>
+                        
+                    </td>
+                    <td>
+                        <center>
+                            @Html.DisplayFor(p => item.sub)
+                        </center>
+                       
+                    </td>
+                    <td>
+                        <center>
+                            @Html.DisplayFor(p => item.time)
+                        </center>
+                       
+                    </td>
+                    <td>
+                        <center>
+                            @Html.DisplayFor(p => item.instructor)
+
+                            <partial name="_TableButtonPartial" model="@item.ID" />
+                        </center>
+                       
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+    </body>

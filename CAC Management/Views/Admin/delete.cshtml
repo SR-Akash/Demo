@@ -1,0 +1,60 @@
+﻿@model CAC_Management.Models.st_routine
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "_LayoutForAdmin";
+}
+<body style="background-color: #309369;align-content: center;">
+    <h2>Delete Routine</h2>
+
+    <form method="post" asp-action="Routine">
+        <input type="hidden" asp-for="ID" />
+        <div style="border:1px solid black; margin:10px;">
+            <div class="row" style="padding:30px;">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <label asp-for="day">Day</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input disabled asp-for="day" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <label asp-for="sub">Subject</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input disabled asp-for="sub" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <label asp-for="time">Time</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input disabled asp-for="time" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <label asp-for="instructor">Instructor</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input disabled asp-for="instructor" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Delete" class="btn btn-danger" asp-route-id="@Model.ID" />
+                    <a asp-action="RoutineIndex" class="btn btn-primary">Back To List</a>
+                </div>
+            </div>
+        </div>
+    </form>
+    </body>

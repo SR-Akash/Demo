@@ -1,0 +1,77 @@
+﻿@model CAC_Management.Models.Student
+@{
+    ViewData["Title"] = "Student Details";
+}
+
+<h1 style="text-align:center">Student Information Details</h1>
+
+<div class="container" style="padding-left: 1px;">
+    <table border="1" class="table table-hover" cellpadding="1" cellspacing="1">
+        <tbody>
+            <tr>
+                <td style="text-align:center; font-weight: bold;">Student Id</td>
+                <td style="text-align:center">@Model.StudentId</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight: bold;">Student Name</td>
+                <td style="text-align:center">@Model.StudentName</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight: bold;">Father Name</td>
+                <td style="text-align:center">@Model.FatherName</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight: bold;">Mother Name</td>
+                <td style="text-align:center">@Model.MotherName</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight: bold;">DOB</td>
+                <td style="text-align:center">@Model.DOB</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight: bold;">Gender</td>
+                <td style="text-align:center">@Model.Gender</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight: bold;">Present Address</td>
+                <td style="text-align:center">@Model.Address</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight: bold;">Contact</td>
+                <td style="text-align:center">@Model.Contact</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight: bold;">Email</td>
+                <td style="text-align:center">@Model.Email</td>
+            </tr>
+
+            <tr>
+                <td style="text-align:center; font-weight: bold;">Password</td>
+                <td style="text-align:center">@Model.Password</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight: bold;">Tuition Fee</td>
+                <td style="text-align:center">@Model.TuitionFee</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight: bold;">Pay Amount</td>
+                <td style="text-align:center">@Model.PayAmount</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight: bold;">Due Amount</td>
+                <td style="text-align:center">@Model.DueAmount</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight: bold;">Payment Status</td>
+                @if (Model.PaymentStatus == 0)
+                {
+                    <td style="text-align:center">Paid</td>
+}
+                else
+                {
+                    <td style="text-align:center">Due</td>
+}
+            </tr>
+        </tbody>
+    </table>
+</div>
